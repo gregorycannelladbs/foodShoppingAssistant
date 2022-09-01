@@ -1,0 +1,133 @@
+* {
+    margin: 0; padding: 0;
+}
+
+.container {
+    margin-top: 40px;
+    border: 1px solid #ddd;
+    display: flex;
+    /*margin-bottom: 10px;*/
+    margin-left: auto;
+    margin-right: auto;
+    align-items:center;
+    max-width: 600px;
+    z-index: 0;
+    justify-content: space-between;
+}
+
+#submitButton {
+    background-color: #f39c12;
+    color:white;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: fixed;
+    bottom: 5px;
+    right: 10%;
+    z-index: 1;
+    display: none;
+}
+
+.image {
+    max-width: 150px;
+    min-width: 150px;
+}
+
+.image input[type='image'] {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    max-width: 100%
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+.description {
+    max-width: 310px;
+    margin-left: 20px;
+}
+
+.recipeNameButton {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer; 
+    text-align: left;
+}
+
+input[type='checkbox'] {
+    /*margin-left: 5px;*/
+    margin-right: 10px;
+    transform: scale(1.2);
+    z-index: 0;
+    cursor: pointer;
+}
+
+.modifiedNumberOfPeople {
+    /*margin-left: 5px;*/
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+a:link { text-decoration: none; }
+a { color: inherit; }
+a:hover { color: blue; }
+
+@media screen and (min-width: 600px) {
+    .description {
+        min-width: 310px;
+    }
+}
+
+
+@media screen and (max-width: 440px) {
+    table {
+        min-width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 1700px) {
+    #submitButton {
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .description {
+        margin-left: 15px;
+    }
+
+    #recipeNameButton {
+        font-size: 0.9rem;
+    }
+
+    .modifiedNumberOfPeople {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 358px) {
+    
+    .description {
+        margin-left: 15px;
+    }
+
+    #recipeNameButton {
+        font-size: 0.85rem;
+    }
+
+    .modifiedNumberOfPeople {
+        font-size: 0.75rem;
+    }
+
+    .image {
+        min-width: 41.90%;
+    }
+}
